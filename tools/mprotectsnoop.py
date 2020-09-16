@@ -17,8 +17,6 @@ from bcc import BPF
 
 # load BPF program
 b = BPF(text="""
-#include <uapi/linux/ptrace.h>
-#include <uapi/linux/limits.h>
 #include <linux/sched.h>
 
 struct data_t {
